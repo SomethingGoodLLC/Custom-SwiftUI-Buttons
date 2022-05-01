@@ -9,8 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        VStack {
+            // MARK: Message Contact Button
+            Button("Contact") {
+                print("contact button pressed")
+            }
+                .buttonStyle(CustomFadeBlackButton())
+            
+            // MARK: Ghost Button
+            Button("Ghost Button") {
+                print("Tapped ghost button")
+            }
+                .buttonStyle(CustomPressedGreyButton())
+        }
     }
 }
 

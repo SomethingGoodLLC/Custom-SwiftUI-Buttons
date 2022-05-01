@@ -11,6 +11,12 @@
 		753EC705281F1405002BC152 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753EC704281F1405002BC152 /* ContentView.swift */; };
 		753EC707281F1405002BC152 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 753EC706281F1405002BC152 /* Assets.xcassets */; };
 		753EC70A281F1405002BC152 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 753EC709281F1405002BC152 /* Preview Assets.xcassets */; };
+		753EC711281F2885002BC152 /* CustomPressedGreyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753EC710281F2885002BC152 /* CustomPressedGreyButton.swift */; };
+		753EC713281F2AD5002BC152 /* CustomFadeBlackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753EC712281F2AD5002BC152 /* CustomFadeBlackButton.swift */; };
+		753EC719281F35C5002BC152 /* customBlackPressed.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 753EC717281F35C5002BC152 /* customBlackPressed.jpeg */; };
+		753EC71A281F35C5002BC152 /* customBlackUnpressed.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 753EC718281F35C5002BC152 /* customBlackUnpressed.jpeg */; };
+		753EC71D281F371C002BC152 /* customGrayPressed.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 753EC71B281F371C002BC152 /* customGrayPressed.jpeg */; };
+		753EC71E281F371C002BC152 /* customGrayUnpressed.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 753EC71C281F371C002BC152 /* customGrayUnpressed.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,13 @@
 		753EC704281F1405002BC152 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		753EC706281F1405002BC152 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		753EC709281F1405002BC152 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		753EC710281F2885002BC152 /* CustomPressedGreyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPressedGreyButton.swift; sourceTree = "<group>"; };
+		753EC712281F2AD5002BC152 /* CustomFadeBlackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFadeBlackButton.swift; sourceTree = "<group>"; };
+		753EC715281F3475002BC152 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		753EC717281F35C5002BC152 /* customBlackPressed.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = customBlackPressed.jpeg; sourceTree = "<group>"; };
+		753EC718281F35C5002BC152 /* customBlackUnpressed.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = customBlackUnpressed.jpeg; sourceTree = "<group>"; };
+		753EC71B281F371C002BC152 /* customGrayPressed.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = customGrayPressed.jpeg; sourceTree = "<group>"; };
+		753EC71C281F371C002BC152 /* customGrayUnpressed.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = customGrayUnpressed.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +48,8 @@
 		753EC6F6281F1405002BC152 = {
 			isa = PBXGroup;
 			children = (
+				753EC715281F3475002BC152 /* README.md */,
+				753EC716281F35A7002BC152 /* img */,
 				753EC701281F1405002BC152 /* M1L6ButtonsChallenge */,
 				753EC700281F1405002BC152 /* Products */,
 			);
@@ -53,6 +68,7 @@
 			children = (
 				753EC702281F1405002BC152 /* M1L6ButtonsChallengeApp.swift */,
 				753EC704281F1405002BC152 /* ContentView.swift */,
+				753EC714281F2ADE002BC152 /* CustomButtons */,
 				753EC706281F1405002BC152 /* Assets.xcassets */,
 				753EC708281F1405002BC152 /* Preview Content */,
 			);
@@ -65,6 +81,26 @@
 				753EC709281F1405002BC152 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		753EC714281F2ADE002BC152 /* CustomButtons */ = {
+			isa = PBXGroup;
+			children = (
+				753EC712281F2AD5002BC152 /* CustomFadeBlackButton.swift */,
+				753EC710281F2885002BC152 /* CustomPressedGreyButton.swift */,
+			);
+			path = CustomButtons;
+			sourceTree = "<group>";
+		};
+		753EC716281F35A7002BC152 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				753EC71B281F371C002BC152 /* customGrayPressed.jpeg */,
+				753EC71C281F371C002BC152 /* customGrayUnpressed.jpeg */,
+				753EC717281F35C5002BC152 /* customBlackPressed.jpeg */,
+				753EC718281F35C5002BC152 /* customBlackUnpressed.jpeg */,
+			);
+			path = img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +161,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				753EC71D281F371C002BC152 /* customGrayPressed.jpeg in Resources */,
 				753EC70A281F1405002BC152 /* Preview Assets.xcassets in Resources */,
 				753EC707281F1405002BC152 /* Assets.xcassets in Resources */,
+				753EC71A281F35C5002BC152 /* customBlackUnpressed.jpeg in Resources */,
+				753EC719281F35C5002BC152 /* customBlackPressed.jpeg in Resources */,
+				753EC71E281F371C002BC152 /* customGrayUnpressed.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +178,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				753EC705281F1405002BC152 /* ContentView.swift in Sources */,
+				753EC711281F2885002BC152 /* CustomPressedGreyButton.swift in Sources */,
+				753EC713281F2AD5002BC152 /* CustomFadeBlackButton.swift in Sources */,
 				753EC703281F1405002BC152 /* M1L6ButtonsChallengeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
